@@ -6,7 +6,41 @@
   height: 40vmin;
   pointer-events: none;
 }
+.inputContainer {
+display: flex;
+flex-direction: column;
+position:relative;
+margin-top: 50%;
+margin-left: 50%;
+/* box-sizing: border-box; */
+font-size: 1.5rem;
 
+}
+.form {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #61dafb;
+
+}
+#hex, #rgb{
+  display: block;
+  min-width: 150px;
+  min-height: 100px;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+ text-align: center;
+
+}
+#rgb {
+  background: rgba(22, 22, 22, 0.823);
+  color: white;
+  padding-top: 10%;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
